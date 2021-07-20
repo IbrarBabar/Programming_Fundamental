@@ -1,0 +1,350 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int co1,co2;
+	cout<<"enter the values of X and Y coordinates: "<<endl;
+	cin>>co1>>co2;
+	if(co1>0 && co2>0)
+	{
+		cout<<"the cooodinates are in 1st quadrant: "<<endl;
+	}
+	else if(co1<0 && co2>0)
+	{
+		cout<<"the cooodinates are in 2nd quadrant: "<<endl;
+	}
+	else if(co1<0 && co2<0)
+	{
+		cout<<"the cooodinates are in 3rd quadrant: "<<endl;
+	}
+	else if(co1>0 && co2<0)
+	{
+		cout<<"the cooodinates are in 4rth quadrant: "<<endl;
+	}
+	else if(co1==0 && co2==0)
+	{
+		
+		cout<<"the coodinates are in the origine: "<<endl;
+	}
+	system("pause");
+	return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout<<"enter your age: "<<endl;
+	cin>>age;
+	if(age>=20)
+	{
+		cout<<"you are eligible for casting vote: "<<endl;
+	}
+	else
+	{
+		cout<<"sorry! you are not eligible for casting vote: "<<endl;
+	}
+	system("pause");
+	return 0;
+}
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int rollnumber,physics,chemistry,computer,total;
+	string name,division;
+	float percentage;
+	cout<<"enter the name of student: "<<endl;
+	cin>>name;
+	cout<<"enter the roll number of student: "<<endl;
+	cin>>rollnumber;
+	cout<<"enter the marks of physics: "<<endl;
+	cin>>physics;
+	cout<<"enter the marks of chemistry: "<<endl;
+	cin>>chemistry;
+	cout<<"enter the marks of computer: "<<endl;
+	cin>>computer;
+	cout<<"total marks: "<<endl;
+	total=physics+chemistry+computer;
+	cout<<"total: "<<total<<endl;
+	cout<<"percetage: "<<endl;
+	percentage=((physics+chemistry+computer)*100)/300;
+	cout<<"percetage: "<<percentage<<endl;
+	if(percentage>=80)
+	{
+		cout<<"division is first: "<<endl;
+	}
+	else if(percentage<80 && percentage>=60)
+	{
+		cout<<"division is second: "<<endl;
+	}
+	else if(percentage<60 && percentage>=40)
+	{
+		cout<<"division is pass: "<<endl;
+	}
+	else
+	{
+		cout<<"fail: "<<endl;
+	}
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int x;
+	string y,astrological_sign;
+	cout<<"enter the birthday: "<<endl;
+	cin>>x;
+	cout<<"enter the month of birth: "<<endl;
+	cin>>y;
+	if(x>=21 && y=="March"  || x<=20  && y=="April")
+	{
+		astrological_sign="Aries,Head";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=21 && y=="April"  || x<=20  && y=="May")
+	{
+		astrological_sign="Taurus,neck";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=21 && y=="May"  || x<=20  && y=="June")
+	{
+		astrological_sign="Gemini,arms";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=21 && y=="June"  || x<=22  && y=="July")
+	{
+		astrological_sign="cancer,breast";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=23 && y=="July"  || x<=22  && y=="Aug.")
+	{
+		astrological_sign="Leo,heart";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=23 && y=="Aug."  || x<=22  && y=="Sep.")
+	{
+		astrological_sign="virgo,belly";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=23 && y=="Sept."  || x<=22  && y=="Oct.")
+	{
+		astrological_sign="Gemini,arms";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=23 && y=="Oct."  || x<=22  && y=="Nov.")
+	{
+		astrological_sign="scorpio,secret";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=23 && y=="Nov."  || x<=21  && y=="Dec.")
+	{
+		astrological_sign="sagittarius,thighs";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=22 && y=="Dec"  || x<=19  && y=="Jan.")
+	{
+		astrological_sign="capricorn,knees";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=20 && y=="Jan."  || x<=19  && y=="Feb.")
+	{
+		astrological_sign="aquarius,legs";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	else if(x>=20 && y=="feb."  || x<=20  && y=="Mar.")
+	{
+		astrological_sign="Pisces,feet";
+		cout<<"your astrological sign is: "<<astrological_sign<<endl;
+	}
+	system("pause");
+	return 0;
+}
+
+
+
+
+		
+
+#include <iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int price=20,discount;
+   string ask="Y";
+   cout<<"fitness manu: "<<endl;
+   cout<<"the cost of monthly membership 40$: "<<endl;
+   cout << "Senior citizen discount is 30%" << endl;
+   cout << "If membership has paid for 12 or more months, 15% discount" << endl;
+   cout << "If more than 5 personal training sessions are paid for, 20% discount" << endl;
+   cout<<"**************************************** "<<endl;
+
+   cout << "Are you a senior citizen? Type Y or N " << endl;
+   cin >> ask;
+   if(ask == "Y")
+	{
+              discount = price - (price * 0.30);
+			  cout<<"you have 30% discout: "<<discount<<"$"<<endl;
+   }
+   cout << "Are you paid for 12 or more months? Type Y or N" << endl;
+   cin >> ask;
+   if(ask == "Y")
+   {
+             discount = price - (price * 0.15);
+			  cout<<"you have 15% discount: "<<discount<<"$"<<endl;
+    }
+   cout << "Have you received more than 5 personal training sessions? Type Y or N" << endl;
+   cin >> ask;
+   if(ask == "Y")
+   {
+              discount = price - (price * 0.20);
+			  cout<<"you have 20% discount: "<<discount<<"$"<<endl;
+   }
+   system("pause");
+   return 0;
+}
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e,f,g,h,i,j;
+	float mean;
+	cout<<"enter 10 integers: "<<endl;
+	cout<<"finf mean: "<<endl;
+	cin>>a>>b>>c>>d>>e>>f>>g>>h>>i>>j;
+	mean=(a+b+c+d+e+f+g+h+i+j)/10;
+	cout<<"mean =:"<<mean<<endl;
+	system ("pause");
+	return 0;
+}
+
+
+
+
+
+
+#include<cmath>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int hours = 1;
+    int minutes = 0;
+    char ampm = 0;
+    char yourchoice;
+    
+    cout << "In case of conversion to 24 hours from 12 hours please enter 'A' " << endl;
+    cout << "In case of comversion to 12 hours from 24 hours please enter 'B' " << endl;
+    cin >> yourchoice;
+
+    if (yourchoice == 'A'|| yourchoice =='a')
+    {
+    	
+    cout << "Enter any number of Hours & Minutes to be converted from 24 hours Notation to 12 hours Notation " << endl;
+    cin >> hours;
+    cin >> minutes;
+
+    if (hours < 12)
+       {
+		 cout << hours << " " << minutes << "A.M" << endl;
+	}
+    else if (hours == 12)
+        {
+		cout << hours << " " << minutes << "P.M" << endl;
+	}
+    else if (hours > 12)
+        {
+		cout << hours - 12 << " " << minutes << "P.M" << endl;
+	}
+        
+	}
+    else if (yourchoice == 'B' || yourchoice == 'b')
+        {
+        	
+    cout << "Enter any number of Hours & Minutes while considring the AM/PM [where 'A' stands for AM and 'P' stands for PM] state to be converted from 12 hours Notation to 24 hours Notation " << endl;
+    cin >> hours;
+    cin >> minutes;
+    cin >> ampm;
+
+    if (ampm == 'A' && hours <= 11)
+       {
+		 cout << hours << ":" << minutes;
+		 }
+    else if (ampm == 'P' && hours == 12)
+    {
+        cout << 12 << ":" << minutes;
+    }
+    else if (ampm == 'P' && hours > 12);
+    {
+	cout << hours + 12 << ":" << minutes;
+}
+    
+		}
+        system("pause");
+        
+        return 0;
+
+}
+
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+float calculateSD(float data[]);
+int main()
+{
+    int i;
+    float data[10];
+	 float num[10], sum=0.0, average;
+    cout << "Enter 10 elements: ";
+    for(i = 0; i < 10; ++i)
+        cin >> data[i];
+	cout<<"mean"<<endl;
+    cout << endl << "Standard Deviation = " << calculateSD(data);
+	  for(i = 0; i < 10; ++i)
+    {
+        cout << i + 1 << ". Enter number: ";
+        cin >> num[i];
+        sum += num[i];
+    }
+    average = sum / 10;
+    cout << "Average = " << average;
+
+float calculateSD(float data[])
+{
+    float sum = 0.0, mean, standardDeviation = 0.0;
+    int i;
+    for(i = 0; i < 10; ++i)
+    {
+        sum += data[i];
+    }
+    mean = sum/10;
+    for(i = 0; i < 10; ++i)
+        standardDeviation += pow(data[i] - mean, 2);
+	system("pause");
+    return sqrt(standardDeviation / 10);
+}
+
