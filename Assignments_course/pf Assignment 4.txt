@@ -1,0 +1,127 @@
+
+							NAME        :: (IBRAR BABAR)
+							Roll number :: (19P-0104)
+							BS(CS)      :: Section (B)
+							ASSIGNMENT  :: PROGRAMMING
+
+
+====================TASK (1)===================
+#include<fstream>
+#include<iostream>
+using namespace std;
+int n;
+void num()
+{
+	cout<<"Enter the number : "<<endl;
+	cin>>n;
+}
+void order()
+{
+
+	ofstream even;
+    even.open("even.txt");
+	ofstream odd;
+	odd.open("odd.txt");
+	ofstream even_odd;
+	even_odd.open("even_odd");
+	cout<<"Enter a number: "<<endl;
+	int i;
+	n=(n-1);
+	cin>>n;
+	    int i;
+    n=(n-1);
+    for (i=1 ;i<=n; i++)
+    {
+        if(i % 2 == 0 && n % 2 == 0)
+        {
+         even<<i<<"\t"<<n<<endl;
+        }
+        if(i % 2!= 0 && n % 2!= 0)
+        {
+         odd<<i<<"\t"<<n<<endl;
+        }
+        if (i % 2!= 0 && n % 2 == 0)
+        {
+         even_odd<<i<<"\t"<<n<<endl;
+        }
+        if (i % 2 == 0 && n % 2!= 0)
+        {
+         even_odd<<i<<"\t"<<n<<endl;
+        }
+        n--;
+    }
+}
+void out_number()
+{
+	ifstream even2;
+	even2.open("even.txt");
+	ifstream odd2;
+	odd2.open("odd.txt");
+	ifstream even2_odd2;
+	even2_odd2.open("even_odd");
+	int i,n;
+	while(even2>>i)
+    {
+		even2>>n;
+        cout<<"even.txt"<<endl;
+        cout<<i<<"\t"<<n<<endl;
+    }
+    while (odd2>>i)
+    {
+		odd2>>n;
+        cout<<"odd.txt"<<endl;
+        cout<<i<<"\t"<<n<<endl;
+    }
+    while (even2_odd2>>i)
+    {
+		even2_odd2>>n;
+        cout<<"even_odd.txt"<<endl;
+        cout<<i<<"\t"<<n<<endl;
+    }
+}
+int main()
+{
+    num();
+    order();
+    out_number();
+    return 0;
+}
+=================================================================================================================================
+
+===========================TASK(2)======================
+#include<iostream>
+using namespace std;
+int mian()
+{
+	int num_of_lockers,x,y=1,z,count,open;
+	cout<<"Lockers ins school : "<<endl;
+	cin>>num_of_lockers;
+	open=num_of_lockers/2;
+	for(int i=3;i<=num_of_lockers;i++)
+	{
+		for(y=x ; y<=num_of_lockers ; y = y+x)
+		{
+			count=0;
+			for(z=2;z<x;z++)
+			{
+				if(y%z==0)
+				{
+					count=count+1;
+				}
+			}
+			if(count % 2 == 2 || count == 0)
+			{
+				open--;
+			}
+			else if(count % 2!=0 || count == 1)
+			{
+				open++;
+			}
+
+		}
+	}
+	cout<<"remaining number of doors are: "<<open<<endl;
+	system("pause");
+	return 0;
+}
+===========================================================================================================

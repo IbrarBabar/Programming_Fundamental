@@ -1,0 +1,147 @@
+							NAME: IBRAR BABAR
+							Roll NO: (19P-0104)
+							BS (CS)  SECTION (B)
+							ASSIGNMENT # 5 (PF)
+=============================================================================================
+	(TASK # 2)
+#include<iostream>
+using namespace std;
+int power_of_2 (int x)
+{
+	for(int i=1;i<=x;i=i*2)
+	{
+		if(i==x)
+		{
+			cout<<"The number you entered is a power of 2"<<endl;
+			return 0;
+		}
+	}
+	cout<<"The number you entered is not a power of 2"<<endl;
+}
+
+int main()
+{
+	int number;
+	cout<<"Enter a number: "<<endl;
+	cin>>number;
+	power_of_2(number);
+	system("pause");
+	return 0;
+}
+==============================================================================================
+	(TASK # 1)
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+void mathematical_operation(string x)
+{
+	char input[20],op;
+	float input_a=0.0,input_b;
+	int i,j,k;
+	i=0;
+	while(input[i]=x[i])
+	{
+		i++;
+	}
+	k=1.0;
+	input_b=0.0;
+	for(j=i-1;j>=0;j--)
+	{
+		if(input[j]!='+')
+		{
+			 input[j]!='-';
+			 input[j]!='*';
+			 input[j]!='/';
+			 input[j]!='^';
+			input_b=input_b+((input[j]-'0')*k);
+			k=k*10;
+		}
+		else
+		{
+			op=input[j];
+			break;
+		}
+	}
+	i=1.0;
+	for(k=j-1;k>=0;k--)
+	{
+		input_a=input_a+((input[k]-'0')*i);
+		i=i*10.0;
+	}
+	
+	
+switch(op)
+	{
+		case '+':
+			cout<<"The result is: "<<input_a+input_b<<endl;
+			break;
+		case '-':
+			cout<<"The result is: "<<input_a+input_b<<endl;
+			break;
+		case '*':
+			cout<<"The result is: "<<input_a+input_b<<endl;
+			break;
+		case '/':
+			cout<<"The result is: "<<input_a+input_b<<endl;
+			break;
+		case '^':
+			cout<<"The result is: "<<pow(input_a,input_b)<<endl;
+			break;
+		default:
+			cout<<"Invalid"<<endl;
+	}
+}
+
+int main()
+{
+	string perform_function;
+	cout<<"Enter an operation to be perform in between: ( +,-,*,/,^): "<<endl;
+	cin>>perform_function;
+	mathematical_operation(perform_function);
+	system("pause");
+	return 0;
+}
+===========================================================================================================
+	
+		(TASK # 3)
+#include <iostream> 
+using namespace std;
+int main()
+{
+	int Rajput_ibrar=10;
+	int coins_1 = 0, coins_2 = 0,  money[20];
+	int player_1[10],player_2[10];
+		for (int i = 0; i < 20; i++)
+		{
+			money[i] = rand() % 10;
+		}
+		for (int i = 0; i < 10; i++)
+		{
+			player_1[i] = money[i+1];
+			player_2[i] = money[i];
+		}
+		for (int i = 0; i < 10; i++)
+		{
+			cout << player_1[i] << endl;
+			cout << player_2[i] <<endl;
+		}
+		for (int i = 0; i < 10; i++)
+		{
+			coins_1 =coins_1 + player_1[i];
+			coins_2 =coins_2 + player_2[i];
+		}
+		cout << "The points of the player_1 is : " << coins_1 << endl;
+		cout << " The points of the player_2 is : " << coins_2 << endl;
+		if (coins_1>coins_2)
+		{
+			cout <<" The player_1 wins the game : " << endl;
+		}
+		else
+		{
+			cout << " The player_2 wins the game :" << endl;
+		}
+		system("pause");
+		return 0;
+}
+================================================================================================

@@ -1,0 +1,67 @@
+
+                                                      (NAME :  IBRAR BABAR)
+                                                      (ROLL NO. 19P-0104)
+                                                      (BS(CS) SECTION (B))
+						      (PROGRAMMING ASSIGNMENT)				
+
+(TASK 1)
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	cin>>x;
+	cout<<"enter value of x"<<endl;
+	cin>>y;
+	cout<<"enter value of y"<<endl;
+	cout<<x<<endl;
+	cout<<y<<endl;
+	x=x+y;
+	y=x-y;
+	x=x-y;
+	cout<<"after swap x"<<x<<endl;
+	cout<<"after swap y"<<y<<endl;
+	system ("pause");
+	return 0;
+}
+
+
+
+
+
+
+(TASK 2)
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x;
+	cin>>x;
+	x=-x;
+	cout<<"-x"<<endl;
+	system ("pause");
+	return 0;
+}
+
+
+
+
+
+(TASK 3)
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	float sum=0, average;
+	for (y=0; y<5; ++y)
+	{cout << y+1 << "enter number: ";
+	cin>>x;
+	sum +=x;
+	}
+	average=sum/5;
+	cout<<"average =" <<average<<endl;
+
+	system ("pause");
+	return 0;
+}
