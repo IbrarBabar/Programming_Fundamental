@@ -1,0 +1,125 @@
+#include<iostream>
+using namespace std;
+bool vowel(char x)
+{
+	switch(x)
+	{
+	case 'A':
+	case 'a':
+	case 'E':
+	case 'e':
+	case 'I':
+	case 'i':
+	case 'O':
+	case 'o':
+	case 'U':
+	case 'u':
+		return true;
+		break;
+	default:
+			return false;
+	}
+
+}
+int main()
+{
+	char a;
+	cout<<"Enter the character to check: "<<endl;
+	cin>>a;
+	if(vowel(a))
+	cout<<"the char is vowel"<<endl;
+	else
+		cout<<"the char is not vowel"<<endl;
+	system("pause");
+	return 0;
+}
+===================================================================================================
+#include<iostream>
+using namespace std;
+int number(int a, int b, int c)
+{
+	return (a+b)*c;
+
+}
+int main()
+{
+	int a,b,c;
+	cout<<"Enter three numbers: "<<endl;
+	cin>>a>>b>>c;
+	cout<<number(a,b,c)<<endl;
+	system("pause");
+	return 0;
+}
+===============================================================================================
+#include<iostream>
+#include<cmath>
+using namespace std;
+double distance(float x1, float y1, float x2, float y2)
+{
+	return sqrt((pow((x2-x1),2)+pow((y2-y1),2)));
+}
+double radius(float x1, float y1, float x2, float y2)
+{
+	double rad;
+	rad=distance(x1,y1,x2,y2);
+	return rad;
+}
+double circumference(float r)
+{
+	return 2*3.1416*r;
+}
+double area(float r)
+{
+	return 3.1416*r*r;
+}
+int main()
+{
+	double r;
+	float x1,x2,y1,y2;
+	cout<<"enter x and y coordinates of centre of circle:  "<<endl;
+	cin>>x1>>y1;
+	cout<<"enter x and y coordinates of point on circle: "<<endl;
+	cin>>x2>>y2;
+	r=radius(x1,y1,x2,y2);
+	cout<<"The radius of the circle is : "<<r<<endl;
+	cout<<"The diameter of the cicle: "<<2*r<<endl;
+	cout<<"The circumference of the circle : "<<circumference(r)<<endl;
+	cout<<"The area of the circle is : "<<area(r)<<endl;
+	system("pasue");
+	return 0;
+}
+==============================================================================================
+#include<iostream>
+using namespace std;
+double calculate_bill(int hourly_rate, int consulting_time, int income);
+int main()
+{
+	int hourly_rate, consulting_time, income;
+	cout<<"enter hourly rate: "<<endl;
+	cin>>hourly_rate;
+	cout<<"enter consulting time in minutes: "<<endl;
+	cin>>consulting_time;
+	cout<<"enter income: "<<endl;
+	cin>>income;
+	cout<<"The total bill is: "<<calculate_bill(hourly_rate,consulting_time,income)<<endl;
+	system("pause");
+	return 0;
+}
+double calculate_bill(int hourly_rate, int consulting_time, int income)
+{
+	if(income <= 25000)
+	{
+		if(consulting_time <=30)
+			return 0;
+		else
+			return hourly_rate*0.40*((consulting_time - 30) /60);
+	}
+	else
+	{
+		if (consulting_time <=20)
+			return 0;
+		else
+			return hourly_rate * 0.70 * ((consulting_time - 20) / 60);
+	}
+}
+====================================================================================================

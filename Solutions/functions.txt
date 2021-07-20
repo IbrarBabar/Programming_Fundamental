@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+int series(int n)
+{
+	int i,sum=0, answer=0;
+    for (i = 1; i <= n; i++) 
+	{
+        answer= i * i;
+        cout << i << "*" << i << " = " << i * i << endl;
+		sum=sum+answer;
+		cout << " The sum of the above series is: "<< sum << endl;
+    }
+}
+	int main()
+	{
+		int n;
+		cin>>n;
+		cout<<series(n)<<endl;
+	system("pause");
+	return 0;
+}
+================================================
+#include<iostream>
+using namespace std;
+int series(int n)
+{
+	int i, ans=0, sum=0;
+	cout<<"enter odd number"<<endl;
+	for(i=1;i<=n;i++)
+	{
+		ans=2*i-1;
+		sum=sum+ans;
+		cout<<sum<<endl;
+	}
+}
+	int main()
+	{
+		int n;
+		cin>>n;
+		cout<<series(n)<<endl;
+		system("pause");
+		return 0;
+	}
+================================================
+#include<iostream>
+#include<string>
+using namespace std;
+double cir(double r)
+{
+	double c;
+	c=2*3.14*r;
+	return c;
+}
+void printme(string name, int age)
+{
+	cout<<"name: "<<name<<endl;
+	cout<<"age: "<<age<<endl;
+}
+int main()
+{
+	double result;
+	double radius;
+	cout<<"enter radius: "<<endl;
+	cin>>radius;
+	result=cir(radius);
+	cout<<"circum of given radius is : "<<result<<endl;
+	printme("Ibrar Rajput", 19);
+	system("pause");
+	return 0;
+}
+===================================================================

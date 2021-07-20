@@ -1,0 +1,274 @@
+                                                      
+                                                       
+
+
+
+
+
+                                                 {    task 1    }
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"enter marks = ";
+	cin>>a;
+	if (a>=0&&a<=100)
+	{
+	if (a>=90)
+	{
+		cout<<"A+";
+	}
+	else if(a>=86&&a<=89)
+	{
+	cout<<"A";
+	}
+	else if(a>=82&&a<=85)
+	{
+	cout<<"A-";
+	}
+	else if(a>=78&&a<=81)
+	{
+	cout<<"B+";
+	}else if(a>=74&&a<=78)
+	{
+	cout<<"B";
+	}else if(a>=70&&a<=73)
+	{
+	cout<<"B-";
+	}else if(a>=66&&a<=69)
+	{
+	cout<<"C+";
+	}else if(a>=62&&a<=65)
+	{
+	cout<<"C";
+	}else if(a>=58&&a<=61)
+	{
+	cout<<"C-";
+	}else if(a>=54&&a<=57)
+	{
+	cout<<"D+";
+	}else if(a>=50&&a<=53)
+	{
+	cout<<"D";
+	}else 
+	{
+		cout<<"f";
+	}}
+	else
+	{
+		cout<<"marks are invald";}
+	system("pause");
+	return 0;
+}
+======================================================================================================================
+                                                     {     task 2    }
+
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+int main()
+{
+	string a;
+	double d,e,f,g,i;
+       e=f=0;
+
+for ( i=0;i<=2;i++)
+		
+{	cout<<"enter your grade";
+     cin>>a;
+	if((a=="A+") || (a=="A") || (a=="A-") || (a=="B+") || (a=="B-") || (a=="B") || (a=="C+") || (a=="C-") || (a=="C") || (a=="D+") || (a=="D") || (a=="F"))
+	{
+		if(a=="A+" || a=="A")
+{
+	d=4.0;
+}
+ else if(a=="A-")
+
+{
+	d=3.67;
+}
+ else if(a=="B+")
+
+{
+	d=3.33;
+}
+else if(a=="B")
+
+{
+	d=3.00;
+}
+
+else if(a=="B-")
+
+{
+	d=2.67;
+}
+else if(a=="C+")
+
+{
+	d=2.33;
+}
+
+
+ else if(a=="C")
+
+{
+	d=2.00;
+}
+else if(a=="C-")
+
+{
+	d=1.67;
+}
+else if(a=="D+")
+
+{
+	d=1.33;
+}
+else if(a=="D")
+
+{
+	d=1.00;
+}
+else  if(a=="F")
+{
+	d=0;
+}
+
+else
+{}f=f+1;
+e=d+e;
+	}
+	else
+	{}
+}
+	g=e/f;
+	cout<<"SGPA "<<g;
+	system("pause");
+	return 0;
+}
+==============================================================================================================================
+                                                                {    task 3    }
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+int main()
+{
+	double a,b,c,d;
+		
+	cout<<"enter your units ";
+     cin>>a;
+	 c=a-50;
+	 d=0;
+
+if (c>=50)
+{
+	b=50*1.20;
+	c=a-150;
+	d=d+b;
+}
+else
+{
+  b=a*1.2;
+}
+ if (c>=100)
+{b=100*1.5;
+d=d+b;
+ c=a-250;}
+ else
+ {b=c*1.5;
+ d=d+b;
+ }
+ if(c>=100  )
+ {
+	 b=100*1.8;
+	 d=d+b;
+	 c=a-250;}
+ else 
+ {
+	 b=c*1.8;
+	 d=d+b;
+ }
+ if(c>=0)
+ {
+ b=c*2;
+ d=d+b;
+ }
+ cout<<" electricity bill is  "<<d;
+	system("pause");
+	return 0;
+}
+==========================================================================================================================================
+
+                                                            { task 4 }
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+int main()
+{
+	double a,b,c,d,e,f,g,h,i,j;
+	cout<<"enter the value of x^2 " ;
+	cin>>a;
+	cout<<"enter the value of x  " ;
+	cin>>b;
+        cout<<"enter the value of constant ";
+	cin>>c;
+		d=pow(b,2)-4*a*c;
+		e=-1*pow(b,2);
+		f=pow(d,1/2);
+		g=2*a;
+		h=e+f;
+		i=e-f;
+		j=h/g;
+		i=j/g;
+		cout<<"the roots are "<<i<<" ," <<j<<endl;
+		if (d<0)
+		{
+		cout<<"  the equation has two real roots.  ";
+		}
+		else	if (d>0)
+		{
+		cout<<"  the equation has two complex roots ";
+		}
+		else	 
+		{
+		cout<<"the equation has a single root.   ";
+		}		
+	system("pause");
+	return 0;
+}
+=============================================================================================================================
+
+                                                                   {  task 5  }
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e,f,g;
+	cout<<" enter the total number of cookies";
+	cin>>a;
+	cout<<endl<<"number of cookies in a box";
+	cin>>b;
+	cout<<endl<<"number of cookie boxes in a container";
+	cin>>c;
+	d=a/b;
+	e=b/c;
+	f=a%b;
+	g=b%c;
+	cout<<"number of boxes"<<d<<endl;
+	cout<<"numbe of containers"<<e<<endl;
+	cout<<"left over of cookies"<<f<<endl;
+	cout<<"left over boxes"<<g<<endl;
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,285 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+int main()
+{
+	ifstream infile;
+	infile.open("user.txt");
+	string user,pass;
+	string fuser,fpass;
+	bool found;
+	cout<<"enter your name " <<endl;
+	cin>>user;
+	cout<<"enter your password " <<endl;
+	cin>>pass;
+
+	for(int i=0;i<=3;i++)
+	{
+        infile>>fuser>>fpass;
+		if(fuser==user && fpass==pass)
+		cout<<"sucessfully login: "<<endl;
+		found="true";
+	}
+	if(found=infile)
+	{
+		cout<<"successfull: "<<endl;
+	}
+	else 
+	{
+		cout<<"unsucessfull: "<<endl;
+	}
+	system("pause");
+	return 0;
+}
+=================================================================
+				(((((((((((((((((((((((((/codescracker.com))))))))))))))))))
+
+
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string id,name,bg,bloodgroup;
+	int number;
+	ifstream student;
+	student.open("abcde.txt");
+	cout<<"enter your blood group"<<endl;
+	cin>>bloodgroup;
+	while(student>>id)
+	{
+
+		student>>name;
+	    student>>bg;
+		student>>number;
+		if(bloodgroup==bg)
+		{
+			cout<<id<<" "<<" "<<" "<<name<<" "<<number<<" "<<endl;
+		}
+	}
+
+	system("pause");
+	return 0;
+}
+
+
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	float min,max;
+	ifstream infile;
+	infile.open("temp.txt");
+	float x=0,sum;
+	int t;
+	infile>>min;
+	max=min;
+	sum=min;
+	while(infile>>t);
+	{
+		if(min>t)
+			min=t;
+		if(max<t);
+		max=t;
+		sum=sum+t;
+		x++;
+	}
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	 ifstream numbers;
+	 numbers.open("abc.txt");
+	 for(int i=0;i<4;i++);
+	 {
+	 numbers>>a;
+	 cout<<"a"<<endl;
+	 }
+	 system("pause");
+	 return 0;
+}
+
+#include<fstream>   (not done)
+#include<iostream>
+using namespace std;
+int main ()
+{
+	int n;
+	ifstream number;
+	number.open("abc.txt");
+	number>>n;
+	cout<<number<<endl;
+	system ("pause");
+	return 0;
+}
+
+
+
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,max,min;
+	ifstream numbers;
+	numbers.open("abcde.txt");
+	numbers>>max;
+	min=max;
+	while(numbers>>a);
+	{
+		if(a<min)
+		{
+			min=a;
+		}
+		if(a>max);
+		{
+			max=a;
+		}
+	}
+	cout<<max<<endl;
+	cout<<min<<endl;
+	system("pause");
+	return 0;
+}
+
+
+
+
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string id,name,bg,number,bloodgroup;
+	ifstream student;
+	student.open("abcde.txt");
+	cout<<"enter your blood group"<<endl;
+	cin>>bloodgroup;
+	for(int i=1;i<=2;i++)
+	{
+		student>>id>>name>>bg>>number;
+		if(bloodgroup==bg)
+		{
+		cout<<id<<name<<" "<<number<<endl;
+		}
+	}
+	system("pause");
+	return 0;
+}
+
+
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string id,name,bg,bloodgroup;
+	int number;
+	ifstream student;
+	student.open("abcde.txt");
+	cout<<"enter your blood group"<<endl;
+	cin>>bloodgroup;
+	while(student>>id)
+	{
+		student>>name;
+	    student>>bg;
+		student>>number;
+		if(bloodgroup==bg)
+		{
+			cout<<id<<name<<" "<<number<<" "<<endl;
+		}
+	}
+	system("pause");
+	return 0;
+}
+
+
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,count=0;
+	cin>>x;
+	ifstream infile;
+	infile.open("123.txt");
+	for(int i=1;i<=15;i++)
+	{
+		infile>>x;
+		if(x==2);
+		{
+			count=count+1;
+		}
+	    //cout<<"the frequency is"<<frequency<<endl;
+	}
+	cout<<"How many time"<<count<<endl;
+	infile.close();
+	system("pause");
+	return 0;
+}
+
+
+char gradecall(int marks)   (not done)
+{
+	if(marks>60)
+	{
+		return ("pass");
+	}
+	else
+	{
+		return ("fail");
+	}
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks;
+	cin>>marks;
+	cout<<gradecall<<endl;
+system("pause");
+return 0;
+}
+============================================================================
+								(not done)
+#include <iostream>
+using namespace std;
+int series(int i, int n, int sum=0, int  answer=0)
+{
+	cin >> n;
+    for (i = 1; i <= n; i++) 
+	{
+        answer= i * i;
+        cout << i << "*" << i << " = " << i * i << endl;
+		sum=sum+answer;
+    }
+}
+	void main()
+	{
+		cout<<series<<endl;
+    cout << " The sum of the above series is: " << endl;
+	system("pause");
+}
+==============================================================================
+
+
+
+
+

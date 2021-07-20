@@ -1,0 +1,168 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks[5];
+	marks[0]=10;
+	marks[1]=50;
+	cin>>marks[2];
+    cout<<marks[0]*marks[1]+marks[2]<<endl;
+
+	system("pause");
+	return 0;
+}
+==================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks[5];
+	for(int i=0;i<5;i++)
+	{
+		cin>>marks[1];
+	}
+	for(int i=5;i<5;i++)
+	{
+		cout<<endl<<marks[1]<<"  ";
+	}
+	system("pause");
+	return 0;
+}
+=====================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int id[5]={1101,1102,1103,1104,1105};
+	for (int i=0;i<5;i++)
+	{
+		cout<<id[i]<<"";
+	}
+	system("pause");
+	return 0;
+}
+=======================================================
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int id[5]={1101,1102,1103,1104,1105};
+	string names[5]={"Ajjji","ibrar","shery","subhani","Affan"};
+	for (int i=0;i<5;i++)
+	{
+		cout<<id[i]<<"  "<<names[i]<<" "<<endl;
+	}
+	
+	system("pause");
+	return 0;
+}
+=============================================================
+			((((((((((((( NOT DONE))))))))))))))
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int id[5]={1101,1102,1103,1104,1105};
+	string names[5]={"Ajjji","ibrar","shery","subhani","Affan"};
+	char grades[5]={'A','B','C','D','D'};
+	for(int i=0;i<5;i++)
+	cout<<id[i]<<"  "<<names[i]<<" "<<grades<<endl;
+	char inputid;
+	int count=0;
+	cout<<"enter grade"<<endl;
+	cin>>inputid;
+	for (int i=0;i<5;i++)
+	{
+		if(grades[i]==inputid)
+			cout++;
+
+		
+	}
+	
+	system("pause");
+	return 0;
+}
+=============================================
+			(((((((((((not done)))))))))))) properly
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int id[5]={1101,1102,1103,1104,1105};
+	string names[5]={"Ajjji","ibrar","shery","subhani","Affan"};
+	char grades[5]={'A','B','C','D','D'};
+	for(int i=0;i<5;i++)
+	cout<<id[i]<<"  "<<names[i]<<" "<<grades[i]<<endl;
+	char inputid;
+	string updatedname;
+	cout<<"enter id to change name "<<endl;
+	cin>>inputid;
+	cout<<"enter updated name"<<endl;
+	cin>>updatedname;
+	for (int i=0;i<5;i++)
+	{
+		if(id[i]==inputid)
+		names[1]=updatedname;
+	}
+	for(int i=0;i<5;i++)
+			cout<<id[i]<<"  "<<names[i]<<" "<<grades[i]<<endl;
+
+	system("pause");
+	return 0;
+}
+===================================
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	ifstream infile;
+	infile.open("D:.\\student.txt");
+	int id[5];
+	string names[5];
+	string city[5];
+	string bg[5];
+	int year[5];
+	for(int i=0;i<5;i++)
+		infile>>id[i]>>names[i]>>city[i]>>bg[i]>>year[i];
+	for(int i=0;i<5;i++)
+		cout<<id[i]<<"   "<<names[i]<<"  "<<city[i]<<"  "<<bg[i]<<"  "<<year[i]<<endl;
+		system("pause");
+		return 0;
+}
+==========================================================================
+#include<fstream>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	ifstream infile;
+	infile.open("D:.\\student.txt");
+	int id[5];
+	string names[5];
+	string city[5];
+	string bg[5];
+	int year[5];
+	for(int i=0;i<5;i++)
+		infile>>id[i]>>names[i]>>city[i]>>bg[i]>>year[i];
+	for(int i=0;i<5;i++)
+		cout<<id[i]<<"   "<<names[i]<<"  "<<city[i]<<"  "<<bg[i]<<"  "<<year[i]<<endl;
+	cout<<"Enter rang"<<endl;
+	int start,end;
+	cout<<"Enter start year and end "<<endl;
+	cin>>start>>end;
+	for(int i=0;i<5;i++)
+	{
+		if(year[i]>=start && year[i]<=end)
+			cout<<names[i]<<"  "<<city[i]<<"  "<<year[i]<<endl;
+	}
+
+		system("pause");
+		return 0;
+		}
+==============================================================================

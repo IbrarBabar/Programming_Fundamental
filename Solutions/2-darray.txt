@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x[3][3];
+	x[0][3];
+	x[1][2];
+	cin>>x[0][0];
+	x[2][3]=x[2][1]+x[2][2]; 
+	cout<<x[2][3]<<endl;
+	for(int row=0;row<3;row++)
+	{
+		for(int col=0;col<4;col++)
+		{
+			x[row][col]=0;
+		}
+	}
+	system("pause");
+	return 0;
+}
+===============================================
+ #include<iostream>
+using namespace std;
+int main()
+{
+	int a[2][3]={{11,22,33},{44,55,66}};
+	int b[2][3]={{1,2,3},{4,5,6}};
+	int c[2][3];
+	for(int row=0;row<2;row++)
+	{
+		for(int col=0;col<3;col++)
+		{
+			c[row][col]=a[row][col]+b[row][col];
+			cout<<c[row][col]<<"   ";//<<endl;
+		}
+		cout<<endl;
+	}
+	system("pause");
+	return 0;
+}
+===============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

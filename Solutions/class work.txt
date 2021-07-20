@@ -1,0 +1,233 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int larger(int a, int b)
+{
+	if(a>b)
+		return a;
+	else
+		return b;
+}
+int larger(int a, int b, int c)
+{
+	return larger(a,larger(b,c));
+}
+int larger(int a, int b, int c, int d)
+{
+	return larger(a,larger(b,c,d));
+}
+int larger(int a, int b,int c, int d, int e)
+{
+	return larger(a, larger(b,c,d,e));
+}
+void main()
+{
+	cout<<larger(4,5)<<endl;
+	cout<<larger(56,78,11)<<endl;
+	cout<<larger(4,6,7,5)<<endl;
+	system("pause");
+}
+----------------------------------------------------------------
+#include<iostream>
+#include<string>
+using namespace std;
+int larger(int a, int b)
+{
+	if(a>b)
+		return a;
+	else
+		return b;
+}
+string larger(string a,string b)
+{
+	if(a>b)
+		return a;
+	else
+		return b;
+}
+void main()
+{
+	cout<<larger(4,5)<<endl;
+	cout<<larger("hello","hi")<<endl;
+	cout<<int('e')<<endl;
+	cout<<int('i')<<endl;
+	cout<<int('A')<<endl;
+	system("pause");
+}
+-----------------------------------------------------------------
+#include<iostream>
+#include<string>
+using namespace std;
+float ZakatCalculator(float balance, float per=2)
+{
+	return balance*per/100;
+}
+float final_velocity(float vi,float a=5.6,float t=7.2)
+{
+	return vi+a*t;
+}
+
+
+void main()
+{
+	cout<<ZakatCalculator(200)<<endl;
+	cout<<ZakatCalculator(200,10)<<endl;
+	cout<<final_velocity(4.5)<<endl;
+	cout<<final_velocity(4.5,3.5)<<endl;
+	cout<<final_velocity(4.5,3.5,5.8)<<endl;
+	system("pause");
+}
+-------------------------------------------------------------------
+#include<iostream>
+#include<string>
+using namespace std;
+void abc()
+
+{
+	int a=10; //automatic loacal variable
+	//int b=20;
+	static int b=20;  // static local variable
+	a++;
+	b++;
+	cout<<"a = "<<a<<"   "<<"b = "<<b<<endl;
+}
+
+void main()
+{
+	abc();
+	abc();
+	abc();
+	system("pause");
+}
+---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+using namespace std;
+int a=20;
+int main()
+{
+		int a=30;
+		cout<<a<<endl;
+		cout<<::a<<endl;
+		system("pause");
+}
+-----------------------------------------------
+not run correctly
+#include<iostream>
+#include<string>
+using namespace std;
+int a;
+void abc()
+{
+		int a=20;
+}
+void print()
+{
+	cout<<a<<endl;
+}
+int main()
+{
+	abc();
+	print();
+	a=50;
+	cout<<a<<endl;
+		system("pause");
+}
+
+	
+-------------------------------------------------
+
+int large(int x, int y)
+{
+	if(x>y)
+		return x;
+	else
+		return y;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b;
+	cin>>a>>b;
+	cout<<"the large number is"<<large(a,b);
+	system("pause");
+	return 0;
+}
+-----------------------------------------------------------	
+						(not compelete)
+#include<iostream>
+using namespace std;
+void xyz(int x, int & y)
+{
+	//x=40,y=50;
+
+}
+void main()
+{
+	int a=10,b=20;
+	xyz(a,b);
+	cout<<a<<b<<endl;
+	system("pause");
+
+}
+========================================================================
+
+#include<iostream>
+using namespace std;
+void swap(int & x, int & y)
+{
+	int z;
+	z=x;
+	x=y;
+	y=z;
+}
+int main()
+{
+	int a=2,b=3;
+	swap(a , b);
+	cout<<a<<"  , "<<b<<endl;
+	system("pause");
+}
+==============================================
+#include<iostream>
+using namespace std;
+void read(float & x)
+{
+	if(x>0)
+	{
+		cin>>x;
+		cout<<"the temperature is high"<<endl;
+	}
+	else
+	{
+		cout<<"nothing"<<endl;
+	}
+}
+int main()
+{
+	float temperature;
+	float read;
+	read(temperature);
+	cout<<temperature<<endl;
+	read(r);
+}
+==========================================================
+#include<iostream>
+using namespace std;
+void read(int & x)
+{
+	do
+	{
+		cin>>x;
+	}
+	while(x<0);
+}
+int main()
+{
+	int a;
+	read(a);
+	cout<<"the positive number  a ="<<a<<endl;
+	system("pause");
+}
+========================================================================

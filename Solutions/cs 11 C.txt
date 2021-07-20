@@ -1,0 +1,119 @@
+#include<iostream>
+using namespace std;
+int add(int a, int b)
+{
+	return a+b;
+}
+int multiply(int a, int b)
+{
+	return a*b;
+}
+int main()
+{
+	int result,number[10],sum,product; 
+	
+	for(int i=0;i<10;i++)
+	{
+		cin>>number[i];
+	}
+	sum=number[0];
+	product=number[0];
+	for(int i=1;i<10;i++)
+	{
+		sum=add(sum,number[i]);
+		product=multiply(product,number[i]);
+
+	}
+	cout<<"the sum of number is: "<<sum<<endl;
+	cout<<"the product of the numbers is:"<<product<<endl;
+	system("pause");
+	return 0;
+}
+==========================================================================================================
+#include<iostream>
+using namespace std;
+int larger_number(int a, int b)
+{
+	if(a>=b)
+		return a;
+	else
+		return b;
+}
+int main()
+{
+	int number[10],larger;
+	for(int i=1;i<=10;i++)
+	{
+		cin>>number[i];
+	}
+	larger=number[0];
+	for(int i=1;i<=10;i++)
+	{
+		larger=larger_number(larger,number[i]);
+	}
+	cout<<"the larger number is : "<<larger<<endl;
+	system("pause");
+	return 0;
+}
+======================================================================
+#include<iostream>
+using namespace std;
+int main()
+{
+	int number[10];
+	for(int i=1;i<=10;i++)
+	{
+		cin>>number[i];
+	}
+	for(int i=10;i>=1;i--)
+	{
+		cout<<number[i]<<endl;
+	}
+	system("pause");
+	return 0;
+}
+================================================================
+#include <iostream>
+using namespace std;
+int main ()
+{
+int array[100],count=0,i;
+for(int i=0; i<100; i++)
+{
+array[i]=rand()%10; //assign number from 0-9numbers randomly
+cout<<array[i]<<endl;
+if(array[i]==0)
+	count=count+1;
+cout<<"occuring time of 0: "<<count<<endl;
+if(array[i]==1)
+	count=count+1;
+cout<<"occuring time of 1: "<<count<<endl;
+if(array[i]==2)
+	count=count+1;
+cout<<"occuring time of 2: "<<count<<endl;
+if(array[i]==3)
+	count=count+1;
+cout<<"occuring time of 3: "<<count<<endl;
+if(array[i]==4)
+	count=count+1;
+cout<<"occuring time of 4: "<<count<<endl;
+if(array[i]==5)
+	count=count+1;
+cout<<"occuring time of 5: "<<count<<endl;
+if(array[i]==6)
+	count=count+1;
+cout<<"occuring time of 6: "<<count<<endl;
+if(array[i]==7)
+	count=count+1;
+cout<<"occuring time of 7: "<<count<<endl;
+if(array[i]==8)
+	count=count+1;
+cout<<"occuring time of 8: "<<count<<endl;
+if(array[i]==9)
+	count=count+1;
+cout<<"occuring time of 9: "<<count<<endl;
+}
+system("pause");
+return 0;
+}
+=======================================================================

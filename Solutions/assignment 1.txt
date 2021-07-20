@@ -1,0 +1,132 @@
+						abuzar zulfiqar
+						bscs19B
+						assignment 1	
+						
+
+				task 1   method 1
+
+#include<iostream>
+using namespace std;
+	int main()
+	{
+		
+		double num1, num2,num3,sum;
+		cout<<"enter first number=";
+		cin>>num1;
+		cout<<endl<<"enter 2nd number=";
+		cin>>num2;
+		cout<<endl<<"values before swapping";
+		cout<<endl<<"the values of num1 and num2 are respectively are";
+		cout<<endl<<num1<<endl<<num2;
+		num3=num1;
+		
+			num1=num2;
+			num2=num3;
+			
+			cout<<endl<<"the values of num1 and num2 after swapping are respectively are";
+			cout<<endl<<num1<<endl<<num2;
+			
+			sum=num1+num2;
+			cout<<endl<<"sum of tow number ="<<sum;
+			system("pause");
+			return 0;
+	
+	}
+
+
+			method 2
+#include<iostream>
+using namespace std;
+	int main()
+	{
+	
+		double num1,num2;
+	
+		cout<<"enter number=";
+		cin>>num1;
+		
+		cout<<"enter number=";
+		cin>>num2;
+
+
+
+	num1=num1+num2;
+	
+	num2=num1-num2;
+	num1=num1-num2;
+	
+
+
+
+	cout<<endl<<"swap number = "<<num1<<num2;
+			system("pause");
+			return 0;
+	
+	}s
+
+
+
+
+
+
+
+
+                             task 2
+
+#include<iostream>
+using namespace std;
+	int main()
+	{
+	
+		double num1;
+	
+		cout<<"enter number=";
+		cin>>num1;
+	num1=num1*-1;	
+	cout<<endl<<"opposite sign number = "<<num1;
+			system("pause");
+			return 0;
+	
+	}
+
+		
+		
+		
+		
+
+			task 3
+
+#include<iostream>
+using namespace std;
+	int main()
+	{
+	
+		double num1, num2;
+		num2=0;
+		cout<<"enter first number=";
+		cin>>num1;
+		num2=num1+num2;
+
+		cout<<"enter 2nd number=";
+		cin>>num1;
+		num2=num1+num2;
+		cout<<"enter 3rd number=";
+		cin>>num1;
+		num2=num1+num2;
+		cout<<"enter 4th number=";
+		cin>>num1;
+		num2=num1+num2;
+		cout<<"enter 5th number=";
+		cin>>num1;
+		num2=num1+num2;
+
+		
+			cout<<endl<<"sum of five number ="<<num2;
+			num2=num2/5;
+				cout<<endl<<"average of five number ="<<num2;
+
+			system("pause");
+			return 0;
+	
+	}
+		
